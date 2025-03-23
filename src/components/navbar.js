@@ -317,7 +317,7 @@ export default function Navbar() {
   // Initialize theme on mount
   useEffect(() => {
     initializeTheme();
-  }, []);
+  }, [initializeTheme]);
 
   useEffect(() => {
     const sections = ["home", "about-us", "services", "faq", "contact"];
