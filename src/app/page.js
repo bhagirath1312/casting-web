@@ -96,42 +96,9 @@
 //           <ExploreCard title="Extras & Crew" description="Join productions as an extra or crew member." image="/explore_icons/crew.png" />
 //         </div>
 //       </section>
-//       {/* ✅ About Us Section */}
-//       <section className="py-16 px-6 text-center bg-[#F4F0F9]" id="about-us">
-//         <h2 className="text-3xl font-bold text-[#5B408C]">About Us</h2>
-//         <p className="text-gray-700 mt-4 max-w-3xl mx-auto leading-relaxed">
-//           Casting Hub is a premier platform connecting aspiring and professional talent with top opportunities in the entertainment industry.
-//           Whether you're an actor, model, voice artist, or filmmaker, we provide the tools to showcase your skills and get discovered.
-//           <br /><br />
-//           Our mission is to make casting accessible, transparent, and efficient, ensuring that talent of all backgrounds gets the recognition they deserve.
-//           By partnering with industry leaders, we offer exclusive casting calls and opportunities.
-//         </p>
-//       </section>
-//       {/* ✅ Services Section */}
-//       <section className="py-16 px-6 text-center bg-white" id="services">
-//         <h2 className="text-3xl font-bold text-[#5B408C]">Our Services</h2>
-//         <p className="text-gray-700 mt-4 max-w-3xl mx-auto">
-//           Explore our professional casting services designed to connect talent with opportunities.
-//         </p>
 
-//         <div className="mt-8 grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-//           <ServiceCard
-//             title="Casting Calls"
-//             description="Find the latest casting calls and apply with ease."
-//             icon="/services_icons/casting-call.png"
-//           />
-//           <ServiceCard
-//             title="Talent Management"
-//             description="Manage your profile, showcase your talent, and get noticed."
-//             icon="/services_icons/talent-management.png"
-//           />
-//           <ServiceCard
-//             title="Production Support"
-//             description="Connect with filmmakers and production houses for collaborations."
-//             icon="/services_icons/production.png"
-//           />
-//         </div>
-//       </section>
+
+
 //       {/* ✅ Testimonials Section (Cool Animation) */}
 //       <section className="pt-16 px-6 text-center">
 //   <h2 className="text-3xl font-bold text-[#5B408C]">What Our Users Say</h2>
@@ -275,6 +242,43 @@ export default function Home() {
           ))}
         </div>
       </section>
+      {/* ✅ About Us Section */}
+      <section className="py-16 px-6 text-center bg-[#F4F0F9]" id="about-us">
+        <h2 className="text-3xl font-bold text-[#5B408C]">About Us</h2>
+        <p className="text-gray-700 mt-4 max-w-3xl mx-auto leading-relaxed">
+          Casting Hub is a premier platform connecting aspiring and professional talent with top opportunities in the entertainment industry.
+          Whether you're an actor, model, voice artist, or filmmaker, we provide the tools to showcase your skills and get discovered.
+          <br /><br />
+          Our mission is to make casting accessible, transparent, and efficient, ensuring that talent of all backgrounds gets the recognition they deserve.
+          By partnering with industry leaders, we offer exclusive casting calls and opportunities.
+        </p>
+      </section>
+      {/* ✅ Services Section */}
+      <section className="py-16 px-6 text-center bg-white" id="services">
+        <h2 className="text-3xl font-bold text-[#5B408C]">Our Services</h2>
+        <p className="text-gray-700 mt-4 max-w-3xl mx-auto">
+          Explore our professional casting services designed to connect talent with opportunities.
+        </p>
+
+        <div className="mt-8 grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <ServiceCard
+            title="Casting Calls"
+            description="Find the latest casting calls and apply with ease."
+            icon="/services_icons/casting-call.png"
+          />
+          <ServiceCard
+            title="Talent Management"
+            description="Manage your profile, showcase your talent, and get noticed."
+            icon="/services_icons/talent-management.png"
+          />
+          <ServiceCard
+            title="Production Support"
+            description="Connect with filmmakers and production houses for collaborations."
+            icon="/services_icons/production.png"
+          />
+        </div>
+      </section>
+
 
       {/* ✅ Testimonials Section (Smooth Animation) */}
       <section className="py-16 px-6 text-center">
