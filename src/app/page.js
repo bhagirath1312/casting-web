@@ -242,23 +242,23 @@ export default function Home() {
           ))}
         </div>
       </section>
-      {/* ✅ About Us Section */}
-<section className="py-20 px-6 text-center " id="about-us">
-<div className="max-w-4xl mx-auto">
-    <h2 className="text-4xl font-extrabold text-primary dark:text-white">About Us</h2>
+       {/* ✅ About Us Section */}
+<section className="py-20 px-6 text-center bg-neutral dark:bg-darkBg" id="about-us">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-4xl font-extrabold text-[#5B408C] ">About Us</h2>
     <p className="text-text dark:text-darkText mt-6 text-lg leading-relaxed">
-      <span className="font-semibold">Casting Hub</span> is a premier platform bridging the gap between 
-      <span className="font-semibold"> aspiring and professional talent </span> 
-      and the <span className="font-semibold"> top opportunities </span> in the entertainment industry. 
-      Whether you&apos;re an <span className="font-semibold"> actor, model, voice artist, or filmmaker</span>, 
-      we provide the tools to <span className="font-semibold"> showcase your skills, connect with industry professionals, and get discovered</span>.
+      <span >Casting Hub</span> is a premier platform bridging the gap between 
+      <span> aspiring and professional talent </span> 
+      and the <span > top opportunities </span> in the entertainment industry. 
+      Whether you&apos;re an <span > actor, model, voice artist, or filmmaker</span>, 
+      we provide the tools to <span > showcase your skills, connect with industry professionals, and get discovered</span>.
     </p>
 
     <p className="text-text dark:text-darkText mt-4 text-lg leading-relaxed">
-      Our mission is to make <span className="font-semibold"> casting accessible, transparent, and efficient</span>, 
+      Our mission is to make <span> casting accessible, transparent, and efficient</span>, 
       ensuring that talent from all backgrounds receives the recognition they deserve.
-      By <span className="font-semibold"> partnering with industry leaders</span>, we bring you exclusive 
-      <span className="font-semibold"> casting calls, auditions, and career-boosting opportunities</span> 
+      By <span> partnering with industry leaders</span>, we bring you exclusive 
+      <spa> casting calls, auditions, and career-boosting opportunities</spa> 
       to take your journey to the next level.
     </p>
   </div>
