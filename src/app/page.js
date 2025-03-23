@@ -243,7 +243,7 @@ export default function Home() {
         </div>
       </section>
       {/* ✅ About Us Section */}
-<section className="py-20 px-6 text-center bg-[#F4F0F9] dark:bg-gray-900" id="about-us">
+<section className="py-20 px-6 text-center  dark:bg-gray-900" id="about-us">
   <div className="max-w-4xl mx-auto">
     <h2 className="text-4xl font-extrabold text-[#5B408C] dark:text-white">About Us</h2>
     <p className="text-gray-700 dark:text-gray-300 mt-6 text-lg leading-relaxed">
