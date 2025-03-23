@@ -134,14 +134,16 @@ export default function Home() {
       </section>
       {/* ✅ Testimonials Section (Cool Animation) */}
       <section className="pt-16 px-6 text-center">
-        <h2 className="text-3xl font-bold text-[#5B408C]">What Our Users Say</h2>
-        <div className="mt-8 max-w-4xl mx-auto h-32 relative overflow-hidden">
-          <div className={`transition-opacity duration-500 transform ${fade ? "opacity-0 -translate-x-4" : "opacity-100 translate-x-0"}`}>
-            <blockquote className="text-lg italic text-black">"{testimonials[currentIndex].quote}"</blockquote>
-            <p className="mt-4 font-bold text-black">- {testimonials[currentIndex].name}, {testimonials[currentIndex].role}</p>
-          </div>
-        </div>
-      </section>
+  <h2 className="text-3xl font-bold text-[#5B408C]">What Our Users Say</h2>
+  <div className="mt-8 max-w-4xl mx-auto h-32 relative overflow-hidden">
+    <div className={`transition-opacity duration-500 transform ${fade ? "opacity-0 -translate-x-4" : "opacity-100 translate-x-0"}`}>
+      <blockquote className="text-lg italic text-black">&quot;{testimonials[currentIndex].quote}&quot;</blockquote>
+      <p className="mt-4 font-bold text-black">
+        - {testimonials[currentIndex].name}, {testimonials[currentIndex].role}
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* ✅ Call to Action Section */}
       <section className="py-16 px-6 text-center bg-gradient-to-r from-[#5B408C] to-[#8E3F67] text-white rounded-lg shadow-lg mx-4 md:mx-16 my-16 mt-0">
