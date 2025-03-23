@@ -248,7 +248,7 @@ export default function Home() {
     <h2 className="text-4xl font-extrabold text-[#5B408C] dark:text-white">About Us</h2>
     <p className="text-gray-700 dark:text-gray-300 mt-6 text-lg leading-relaxed">
       <span className="font-semibold">Casting Hub</span> is a premier platform bridging the gap between **aspiring and professional talent** and the **top opportunities** in the entertainment industry.  
-      Whether you're an **actor, model, voice artist, or filmmaker**, we provide the tools to **showcase your skills, connect with industry professionals, and get discovered**.  
+      Whether you&apos;re an **actor, model, voice artist, or filmmaker**, we provide the tools to **showcase your skills, connect with industry professionals, and get discovered**.  
     </p>
 
     <p className="text-gray-700 dark:text-gray-300 mt-4 text-lg leading-relaxed">
