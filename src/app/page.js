@@ -137,7 +137,9 @@ export default function Home() {
   <h2 className="text-3xl font-bold text-[#5B408C]">What Our Users Say</h2>
   <div className="mt-8 max-w-4xl mx-auto h-32 relative overflow-hidden">
     <div className={`transition-opacity duration-500 transform ${fade ? "opacity-0 -translate-x-4" : "opacity-100 translate-x-0"}`}>
-      <blockquote className="text-lg italic text-black">&quot;{testimonials[currentIndex].quote}&quot;</blockquote>
+      <blockquote className="text-lg italic text-black">
+        &quot;{testimonials[currentIndex].quote.replace(/'/g, "&#39;")}&quot;
+      </blockquote>
       <p className="mt-4 font-bold text-black">
         - {testimonials[currentIndex].name}, {testimonials[currentIndex].role}
       </p>
