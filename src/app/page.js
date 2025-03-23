@@ -26,7 +26,7 @@ const ServiceCard = ({ title, description, icon }) => (
 // ✅ Testimonials Data
 const testimonials = [
   {
-    quote: "Casting Hub helped me land my first major role in a commercial. The process was seamless, and the opportunities are endless!",
+    quote: "Casting Hub helped me land my first major role in a commercial. The process was seamless, and the opportunities are endless!".replace(/'/g, "&#39;"),
     name: "Alex Johnson",
     role: "Actor",
   },
