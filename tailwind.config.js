@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // /** @type {import('tailwindcss').Config} */
 // module.exports = {
 //   content: ["./pages/**/*.{js,ts,jsx,tsx}",
@@ -23,10 +24,22 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
+=======
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/utils/**/*.{js,ts,jsx,tsx}",
+    "./src/styles/**/*.css",
+>>>>>>> 9d719e0 (add dark mode functionlity)
   ],
   theme: {
     extend: {
       colors: {
+<<<<<<< HEAD
         // Light Mode Colors
         primary: "#5B408C", // Purple
         secondary: "#8D8B3A", // Olive Green
@@ -47,6 +60,20 @@ module.exports = {
         // Additional Grays for UI contrast
         grayLight: "#D1D5DB", // Light gray for borders
         grayDark: "#4B5563", // Dark gray for text in dark mode
+=======
+        primary: "#5B408C",
+        secondary: "#8D8B3A",
+        accent: "#8E3F67",
+        neutral: {
+          DEFAULT: "#F4F0F9",
+          200: "#F4F0F9",
+        },
+        text: "#222222",
+        cardBg: "#FFFFFF",
+        darkBg: "#0a0a0a",
+        darkText: "#ededed",
+        darkCardBg: "#1a1a1a",
+>>>>>>> 9d719e0 (add dark mode functionlity)
       },
     },
   },

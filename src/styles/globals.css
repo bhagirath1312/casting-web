@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;
@@ -10,10 +11,25 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+=======
+/* ✅ Remove incorrect @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Define CSS Variables for Theme */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+>>>>>>> 9d719e0 (add dark mode functionlity)
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+<<<<<<< HEAD
+=======
+/* ✅ Fix Dark Mode CSS Variables */
+>>>>>>> 9d719e0 (add dark mode functionlity)
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -21,6 +37,7 @@
   }
 }
 
+<<<<<<< HEAD
 body {
   background: var(--background);
   color: var(--foreground);
@@ -34,4 +51,27 @@ html, body {
 /* Custom transition for Navbar */
 .navbar-transition {
   transition: all 0.3s ease-in-out;
+=======
+/* ✅ Apply Theme Variables */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  @apply bg-neutral;
+}
+
+/* ✅ Use Tailwind Classes */
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* ✅ Navbar Transition */
+.navbar-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Fix Dark Mode */
+html.dark {
+  @apply bg-darkBg text-darkText;
+>>>>>>> 9d719e0 (add dark mode functionlity)
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { Geist, Geist_Mono } from "next/font/google";
 // import "../styles/globals.css";
 
@@ -94,11 +95,31 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+=======
+"use client";
+
+import "../styles/globals.css";
+import { useEffect } from "react";
+import useThemeStore from "@/store/themeStore";
+import { Inter, Roboto_Mono } from "next/font/google";
+
+const inter = Inter({
+  variable: "--font-sans",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const robotoMono = Roboto_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+>>>>>>> 9d719e0 (add dark mode functionlity)
 });
 
 export default function RootLayout({ children }) {
   const { darkMode, initializeTheme } = useThemeStore();
 
+<<<<<<< HEAD
   // Ensure initializeTheme doesn't change on re-renders
   const initTheme = useCallback(() => {
     loadTheme(); // Load from localStorage before Zustand sync
@@ -108,13 +129,22 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     initTheme();
   }, [initTheme]);
+=======
+  useEffect(() => {
+    initializeTheme();
+  }, [initializeTheme]);
+>>>>>>> 9d719e0 (add dark mode functionlity)
 
   return (
     <html lang="en" className={darkMode ? "dark" : ""}>
       <body
+<<<<<<< HEAD
         className={`${geistSans.variable} ${geistMono.variable} antialiased transition-all duration-300 ${
           darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
         }`}
+=======
+        className={`${inter.variable} ${robotoMono.variable} antialiased transition-all duration-300 bg-white text-black dark:bg-darkBg dark:text-darkText`}
+>>>>>>> 9d719e0 (add dark mode functionlity)
       >
         {children}
       </body>
