@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import Image from "next/image";
+import Image from "next/image"; // Importing next/image for optimized images
 import Link from "next/link";
 import useThemeStore from "@/store/themeStore"; // Import Zustand for dark mode
 import { motion } from "framer-motion";
@@ -132,6 +132,7 @@ export default function Home() {
         className="mt-12 px-6 flex justify-center"
       >
         <div className="max-w-4xl rounded-lg overflow-hidden shadow-lg">
+          {/* Replace <img> with <Image> from Next.js */}
           <Image
             src="/background.jpg"
             alt="Casting Talent"
@@ -191,9 +192,11 @@ export default function Home() {
               viewport={{ once: true }}
               className="overflow-hidden rounded-lg shadow-lg"
             >
-              <img
+              <Image
                 src="/background.jpg"
                 alt="Casting Process"
+                width={800}
+                height={400}
                 className="w-full h-auto object-cover"
               />
             </motion.div>
@@ -212,6 +215,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
       {/* ✅ Services Section */}
       <section className="py-16 px-6 text-center bg-white" id="services">
         <h2 className="text-3xl font-bold text-[#5B408C]">Our Services</h2>
@@ -237,6 +241,7 @@ export default function Home() {
           />
         </div>
       </section>
+
       {/* ✅ Testimonials Section (Cool Animation) */}
       <section className="pt-16 px-6 text-center">
         <h2 className="text-3xl font-bold text-[#5B408C]">What Our Users Say</h2>
@@ -247,6 +252,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* ✅ Call to Action Section */}
       <section className="py-16 px-6 text-center bg-gradient-to-r from-[#5B408C] to-[#8E3F67] text-white rounded-lg shadow-lg mx-4 md:mx-16 my-16 mt-0">
         <h2 className="text-4xl font-bold">Ready to Get Started?</h2>
