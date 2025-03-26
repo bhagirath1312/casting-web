@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <div className={`min-h-screen bg-neutral dark:bg-darkBg ${darkMode ? "dark" : ""}`}>
       <Navbar />
-      
+
       {/* ✅ Hero Section with Animations */}
       <motion.section
         id="home"
@@ -138,6 +138,7 @@ export default function Home() {
             width={800}
             height={400}
             className="rounded-lg w-auto h-auto"
+            priority
           />
         </div>
       </motion.section>
@@ -191,9 +192,11 @@ export default function Home() {
               viewport={{ once: true }}
               className="overflow-hidden rounded-lg shadow-lg"
             >
-              <img
+              <Image
                 src="/background.jpg"
                 alt="Casting Process"
+                width={800}
+                height={400}
                 className="w-full h-auto object-cover"
               />
             </motion.div>
@@ -212,8 +215,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-{/* ✅ Services Section */}
-<section className="py-16 px-6 text-center bg-white" id="services">
+      {/* ✅ Services Section */}
+      <section className="py-16 px-6 text-center bg-white" id="services">
         <h2 className="text-3xl font-bold text-[#5B408C]">Our Services</h2>
         <p className="text-gray-700 mt-4 max-w-3xl mx-auto">
           Explore our professional casting services designed to connect talent with opportunities.
@@ -247,8 +250,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-{/* ✅ Call to Action Section */}
-<section className="py-16 px-6 text-center bg-gradient-to-r from-[#5B408C] to-[#8E3F67] text-white rounded-lg shadow-lg mx-4 md:mx-16 my-16 mt-0">
+      {/* ✅ Call to Action Section */}
+      <section className="py-16 px-6 text-center bg-gradient-to-r from-[#5B408C] to-[#8E3F67] text-white rounded-lg shadow-lg mx-4 md:mx-16 my-16 mt-0">
         <h2 className="text-4xl font-bold">Ready to Get Started?</h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg leading-relaxed">
           Take the next step in your career and join a thriving community of talent.
